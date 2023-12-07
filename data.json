@@ -1,0 +1,84 @@
+{
+    "quiz": [ { "title": "Intitulé du quiz", "questions":
+        [{
+            "content": "question 1",
+            "answers": [{"content": "1A", "good": "false"},
+                        {"content": "1B", "good": "true"},
+                        {"content": "1C", "good": "false"},
+                        {"content": "1D", "good": "false"}],
+            "explanation": "explication 1"
+        },
+        {
+            "content": "question 2",
+            "answers": [{"content": "2A", "good": "false"},
+                        {"content": "2B", "good": "false"},
+                        {"content": "2C", "good": "true"},
+                        {"content": "2D", "good": "false"}],
+            "explanation": "explication 2"
+        },
+        {
+            "content": "question 3",
+            "answers": [{"content": "3A", "good": "true"},
+                        {"content": "3B", "good": "false"},
+                        {"content": "3C", "good": "false"},
+                        {"content": "3D", "good": "false"}],
+            "explanation": "explication 3"
+        },
+        {
+            "content": "question 4",
+            "answers": [{"content": "4A", "good": "false"},
+                        {"content": "4B", "good": "false"},
+                        {"content": "4C", "good": "false"},
+                        {"content": "4D", "good": "true"}],
+            "explanation": "explication 4"
+        },
+        {
+            "content": "question 5",
+            "answers": [{"content": "5A", "good": "false"},
+                        {"content": "5B", "good": "false"},
+                        {"content": "5C", "good": "true"},
+                        {"content": "5D", "good": "false"}],
+            "explanation": "explication 5"
+        },
+        {
+            "content": "question 6",
+            "answers": [{"content": "6A", "good": "false"},
+                        {"content": "6B", "good": "false"},
+                        {"content": "6C", "good": "false"},
+                        {"content": "6D", "good": "true"}],
+            "explanation": "explication 6"
+        },
+        {
+            "content": "question 7",
+            "answers": [{"content": "7A", "good": "true"},
+                        {"content": "7C", "good": "false"},
+                        {"content": "7C", "good": "false"},
+                        {"content": "7D", "good": "false"}],
+            "explanation": "explication 7"
+        },
+        {
+            "content": "question 8",
+            "answers": [{"content": "8A", "good": "false"},
+                        {"content": "8B", "good": "false"},
+                        {"content": "8C", "good": "true"},
+                        {"content": "8D", "good": "false"}],
+            "explanation": "explication 8"
+        },
+        {
+            "content": "question 9",
+            "answers": [{"content": "9A", "good": "false"},
+                        {"content": "9B", "good": "true"},
+                        {"content": "9D", "good": "false"},
+                        {"content": "9D", "good": "false"}],
+            "explanation": "explication 9"
+        },
+        {
+            "content": "question 10",
+            "answers": [{"content": "10A", "good": "true"},
+                        {"content": "10B", "good": "false"},
+                        {"content": "10C", "good": "false"},
+                        {"content": "10D", "good": "false"}],
+            "explanation": "explication 10"
+        }]}
+    ]
+}
