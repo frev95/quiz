@@ -3,11 +3,12 @@
 // Classe Quiz
 
 require 'classes/Question.php';
+
 class Quiz
 {
     public string $title = "";
     public array $questions = [];
-    public int $currentQuestionIndex = 0;
+    public int $currentQuestionIndex = -1;  // quiz pas encore commencé
     public int $score = 0;
 
     // Constructeur
@@ -34,12 +35,18 @@ class Quiz
     {
         $this->score += 1;
     }
-    public function displayNextQuestion()
+
+    public function displayNextQuestion() : bool
     {
-        // passage à la question suivante si une réponse a été donnée à la question en cours
-        if ($this->questions[$this->currentQuestionIndex]->wasAnswered()) {
-            $this->currentQuestionIndex += 1;
+        $next = false;
+
+        if ($this->currentQuestionIndex < count($this->questions) - 1) {    // sinon c'est déjà la dernière question
+            if ($this->questions[$this->currentQuestionIndex]->wasAnswered()) { // il faut d'abord vérifier que la question en cours a reçu une réponse
+                $this->currentQuestionIndex += 1;
+                // actualiser l'affichage de la nouvelle question courante
+                $next = true;
+            }
         }
-        // à compléter
+        return $next;
     }
 }
