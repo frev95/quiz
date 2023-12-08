@@ -4,7 +4,7 @@
 
 class Answer
 {
-    public string $content = "";
+    public string $content;
     public bool $good = false;
     public bool $selected = false;
 
