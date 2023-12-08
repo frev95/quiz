@@ -8,22 +8,27 @@
   </head>
   <body>
       <?php 
+        require 'classes/Quiz.php';
 
-        $data = file_get_contents(__DIR__.'/data.json'); // recherche des données dans le JSON
-        $data = json_decode($data, true); // conversion des données en tableau associatif
-        $quiz = $data['quiz']; // initialisation du quiz avec les données
-        var_dump($quiz);
+        $data = file_get_contents(__DIR__.'/data.json'); // récupération des données du fichier JSON
+        $data = json_decode($data, true); // conversion de ces données en tableaux associatifs
+        $data = $data['quiz']; // sélection des données qui vont servir à initialiser le quiz
 
         $title = "Quiz sans titre";
-        if (isset($item['explanation'])) {
-            $explanation = $item['explanation'];
+        if (isset($data['title'])) {
+            $title = $data['title'];
         }
+        $quiz = new Quiz($title, $data['questions']);
         
-
-
-        for ($i=0; $i < count($quiz); $i++) { 
-          echo $quiz->question;
-        }
+        // à faire: - afficher la première question: $quiz->displayNextQuestion();
+        //          - attendre que le joueur ait sélectionné une réponse, puis l'ait validé
+        //            (NB: le bouton de validation n'est activé qu'après sélection d'une réponse)
+        //          - une fois la réponse validée, mise en couleur de la réponse (vert = bien répondu)
+        //            et actualisation du score                                  (rouge = mal répondu)
+        //          - passage à la question suivante (boucle jusqu'à la dernière question)
+        //          - le quiz est terminé; bilan / récapitulatif + explications complémentaires
+        
+        //          - choix de recommencer ou de passer à un autre quiz (à récupérer depuis un fichier ou via une API)
 
       ?>
   </body>
