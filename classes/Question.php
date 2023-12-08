@@ -6,7 +6,7 @@ require 'classes/Answer.php';
 
 class Question
 {
-    public string $content = "";
+    public string $content;
     public array $answers = [];
     public string $explanation = "";
 
